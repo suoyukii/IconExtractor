@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net8.0-windows</TargetFramework>
+        <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
+        <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
+        <Authors>suoyukii</Authors>
+        <Copyright>Copyright © 2024 suoyukii</Copyright>
+        <PackageProjectUrl>https://github.com/suoyukii/IconExtractor</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/suoyukii/IconExtractor?tab=MIT-1-ov-file</PackageLicenseUrl>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="System.Drawing.Common" Version="*"/>
+        <PackageReference Include="Avalonia" Version="*"/>
+        <PackageReference Include="Avalonia.Desktop" Version="*"/>
+        <PackageReference Include="Avalonia.Themes.Fluent" Version="*"/>
+        <PackageReference Include="Avalonia.Fonts.Inter" Version="*"/>
+        <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="*"/>
+    </ItemGroup>
+</Project>
