@@ -3,7 +3,7 @@
 
 <p align="center">
   <a href="https://opensource.org/licenses/MIT">
-    <img src="http://img.shields.io/badge/License-MIT%20License-1e90ff?style=for-the-badge"/>
+    <img src="http://img.shields.io/badge/License-MIT_License-1e90ff?style=for-the-badge"/>
   </a>
   <a href="https://dotnet.microsoft.com">
     <img src="http://img.shields.io/badge/.Net-8.0-1e90ff?style=for-the-badge"/>

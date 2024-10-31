@@ -8,6 +8,9 @@
   <a href="https://dotnet.microsoft.com">
     <img src="http://img.shields.io/badge/.Net-8.0-1e90ff?style=for-the-badge"/>
   </a>
+  <a href="https://avaloniaui.net">
+    <img src="http://img.shields.io/badge/Avalonia-11.1-1e90ff?style=for-the-badge"/>
+  </a>
 </p>
 
 ---
