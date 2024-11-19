@@ -26,6 +26,10 @@
             <Setter Property="Margin" Value="8,0" />
             <Setter Property="SelectedIndex" Value="0" />
         </Style>
+        <Style Selector="WrapPanel">
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
     </Window.Styles>
     <Grid RowDefinitions="36,*">
         <StackPanel Grid.Row="0" Classes="G0">
@@ -40,7 +44,7 @@
             </ComboBox>
         </StackPanel>
         <ScrollViewer Grid.Row="1">
-            <WrapPanel Name="list" />
+            <WrapPanel Name="list"/>
         </ScrollViewer>
         <TextBlock Name="tip" Grid.Row="1" Text="Drag and drop a dll or exe file into this" Classes="Center" />
     </Grid>

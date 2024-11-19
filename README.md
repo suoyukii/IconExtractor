@@ -6,10 +6,10 @@
     <img src="http://img.shields.io/badge/License-MIT_License-1e90ff?style=for-the-badge"/>
   </a>
   <a href="https://dotnet.microsoft.com">
-    <img src="http://img.shields.io/badge/.Net-8.0-1e90ff?style=for-the-badge"/>
+    <img src="http://img.shields.io/badge/.Net-9.0-1e90ff?style=for-the-badge"/>
   </a>
   <a href="https://avaloniaui.net">
-    <img src="http://img.shields.io/badge/Avalonia-11.1-1e90ff?style=for-the-badge"/>
+    <img src="http://img.shields.io/badge/Avalonia-11.2-1e90ff?style=for-the-badge"/>
   </a>
 </p>
 
@@ -24,14 +24,6 @@
 
 IconExtractor can extract all icons from .dll and .exe with specified resolution.
 
-## ✨ Features
+## ✨ Install
 
-- Easy use
-- Drag and drop support
-
-## 🌟 Install
-
-`IconExtractor` requires `.Net 8.0` `Run desktop apps` `x64` to run successfully.
-
-- [Download .Net 8.0](https://dotnet.microsoft.com/zh-cn/download/dotnet/8.0/runtime)
 - [Download IconExtractor](https://github.com/suoyukii/IconExtractor/releases)

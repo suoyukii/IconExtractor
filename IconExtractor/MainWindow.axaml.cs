@@ -33,7 +33,7 @@ public partial class MainWindow : Window
         GenerateImage();
     }
 
-    private void SizeChanged(object sender, SelectionChangedEventArgs e)
+    private new void SizeChanged(object sender, SelectionChangedEventArgs e)
     {
         if (last_file_list == null) return;
         GenerateImage();
@@ -82,11 +82,11 @@ public partial class MainWindow : Window
                             Title = "Save Icon File",
                             SuggestedFileName = "icon",
                             DefaultExtension = "png",
-                            FileTypeChoices = new[]
-                            {
-                                new FilePickerFileType("PNG") { Patterns = new[] { "*.png" } },
-                                new FilePickerFileType("Icon") { Patterns = new[] { "*.ico" } }
-                            }
+                            FileTypeChoices =
+                            [
+                                new FilePickerFileType("PNG") { Patterns = ["*.png"] },
+                                new FilePickerFileType("Icon") { Patterns = ["*.ico"] }
+                            ]
                         });
 
                     if (save_file_picker is null) return;

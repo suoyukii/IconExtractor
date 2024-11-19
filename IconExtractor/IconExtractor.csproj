@@ -1,13 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <OutputType>WinExe</OutputType>
-        <TargetFramework>net8.0-windows</TargetFramework>
+        <TargetFramework>net9.0-windows</TargetFramework>
         <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
         <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
+        <PublishAot>true</PublishAot>
         <Authors>suoyukii</Authors>
         <Copyright>Copyright © 2024 suoyukii</Copyright>
         <PackageProjectUrl>https://github.com/suoyukii/IconExtractor</PackageProjectUrl>
         <PackageLicenseUrl>https://github.com/suoyukii/IconExtractor?tab=MIT-1-ov-file</PackageLicenseUrl>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+      <DebugType>none</DebugType>
     </PropertyGroup>
     <ItemGroup>
         <PackageReference Include="System.Drawing.Common" Version="*"/>
