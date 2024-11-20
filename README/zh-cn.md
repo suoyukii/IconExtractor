@@ -3,7 +3,7 @@
 
 <p align="center">
   <a href="https://opensource.org/licenses/MIT">
-    <img src="http://img.shields.io/badge/License-MIT_License-1e90ff?style=for-the-badge"/>
+    <img src="http://img.shields.io/badge/License-MIT-1e90ff?style=for-the-badge"/>
   </a>
   <a href="https://dotnet.microsoft.com">
     <img src="http://img.shields.io/badge/.Net-9.0-1e90ff?style=for-the-badge"/>
@@ -18,6 +18,8 @@
 中文名：图标提取工具
 
 IconExtractor 可以从 .dll 和 .exe 文件中提取指定分辨率的所有图标。
+
+显示的图标可以点击保存为 .png 和 .ico 文件。
 
 ## ✨ 安装
 

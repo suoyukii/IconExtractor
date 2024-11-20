@@ -4,36 +4,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="IconExtractor.MainWindow"
-        Title="IconExtractor" Width="640" Height="400" WindowStartupLocation="CenterScreen">
-    <Window.Styles>
-        <Style Selector="StackPanel.G0">
-            <Setter Property="Orientation" Value="Horizontal" />
-            <Setter Property="HorizontalAlignment" Value="Right" />
-        </Style>
-        <Style Selector="TextBlock">
-            <Setter Property="HorizontalAlignment" Value="Center" />
-            <Style Selector="^.Size">
-                <Setter Property="HorizontalAlignment" Value="Stretch" />
-                <Setter Property="VerticalAlignment" Value="Center" />
-            </Style>
-            <Style Selector="^.Center">
-                <Setter Property="VerticalAlignment" Value="Center" />
-            </Style>
-        </Style>
-        <Style Selector="ComboBox">
-            <Setter Property="VerticalAlignment" Value="Center" />
-            <Setter Property="Width" Value="120" />
-            <Setter Property="Margin" Value="8,0" />
-            <Setter Property="SelectedIndex" Value="0" />
-        </Style>
-        <Style Selector="WrapPanel">
-            <Setter Property="HorizontalAlignment" Value="Center" />
-            <Setter Property="VerticalAlignment" Value="Center" />
-        </Style>
-    </Window.Styles>
+        Width="640" Height="400" WindowStartupLocation="CenterScreen">
     <Grid RowDefinitions="36,*">
         <StackPanel Grid.Row="0" Classes="G0">
-            <TextBlock Text="Size:" Classes="Size" />
+            <TextBlock Name="size" Classes="Size" />
             <ComboBox Name="size_select" SelectionChanged="SizeChanged">
                 <ComboBoxItem Content="16 x 16" Tag="16" />
                 <ComboBoxItem Content="32 x 32" Tag="32" />
@@ -41,11 +15,12 @@
                 <ComboBoxItem Content="64 x 64" Tag="64" />
                 <ComboBoxItem Content="128 x 128" Tag="128" />
                 <ComboBoxItem Content="256 x 256" Tag="256" />
+                <ComboBoxItem Content="512 x 512" Tag="512" />
             </ComboBox>
         </StackPanel>
         <ScrollViewer Grid.Row="1">
             <WrapPanel Name="list"/>
         </ScrollViewer>
-        <TextBlock Name="tip" Grid.Row="1" Text="Drag and drop a dll or exe file into this" Classes="Center" />
+        <TextBlock Name="tip" Grid.Row="1" Classes="Center" />
     </Grid>
 </Window>

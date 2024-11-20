@@ -1,5 +1,7 @@
+using System;
 using System.Drawing;
 using System.Drawing.Imaging;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using Avalonia;
@@ -20,6 +22,13 @@ public partial class MainWindow : Window
     public MainWindow()
     {
         InitializeComponent();
+        Loaded += (_, _) =>
+        {
+            var lang = Language.Get();
+            Title = lang[0];
+            size.Text = lang[1];
+            tip.Text = lang[2];
+        };
         DragDrop.SetAllowDrop(this, true);
         AddHandler(DragDrop.DropEvent, Drop);
     }
@@ -44,13 +53,13 @@ public partial class MainWindow : Window
         foreach (var file_url in last_file_list)
         {
             if (!File.Exists(file_url)) break;
-            var size = int.Parse((size_select.SelectedItem as ComboBoxItem).Tag.ToString());
+            var icon_size = int.Parse((size_select.SelectedItem as ComboBoxItem).Tag.ToString());
             tip.IsVisible = false;
             list.Children.Clear();
             var index = 0;
             while (true)
             {
-                var icon = System.Drawing.Icon.ExtractIcon(file_url, index++, size);
+                var icon = System.Drawing.Icon.ExtractIcon(file_url, index++, icon_size);
                 if (icon == null) break;
                 var bmp = icon.ToBitmap();
                 icon.Dispose();
